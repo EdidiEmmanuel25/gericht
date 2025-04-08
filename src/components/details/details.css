@@ -1,0 +1,14 @@
+.details{
+    width: 100%;
+    margin: 1em 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.dash{
+    width: 90px;
+    height: 1px;
+    background: var(--color-golden);
+    margin: 0 1rem;
+}

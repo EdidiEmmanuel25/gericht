@@ -1,0 +1,93 @@
+.special{
+    flex-direction: column;
+    background: var(--color-black);
+    padding: 1rem;
+}
+.special_title{
+    margin: 2rem 0;
+}
+.special_title p{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+.special_title h1{
+    color: var(--color-golden);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.special_menu{
+    display: flex;
+    flex-direction: row;
+
+}
+.special_menu h2{
+    color: var(--color-golden);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.special_menu p{
+    color: var(--color-golden);
+    line-height: 17px;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.special_menu-items{
+    margin: 0 2rem;
+}
+.special_menu-items p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.special_menu-img img{
+    width: 210px;
+    justify-content: center;
+    align-items: center;
+}
+.special_menu-wine,
+.special_menu-cocktail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.special_button{
+    margin: 3rem 0;
+}
+.special_button button{
+    padding: 1rem;
+    background-color: rgb(247, 208, 157);
+    border: none;
+    border-radius: 2px;
+}
+@media screen and (max-width:1050px) {
+    .special_menu{
+        flex-direction: column;
+    }
+    .special_menu-img img{
+        width: 100px;
+    }
+    .special_menu-img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .special_menu{
+        flex-direction: column;
+    }
+    .special_menu-items{
+        margin: 0;
+    }
+
+    
+}

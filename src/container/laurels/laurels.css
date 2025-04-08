@@ -1,0 +1,103 @@
+.lau-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.lau-info p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--color-golden);
+}
+.lau-info h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 27px;
+    line-height: 45px;
+    font-weight: 800;
+    color: var(--color-golden);
+}
+.lau-award{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lau-award_card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    margin: 1rem;
+    
+
+}
+.lau-award_card img{
+    width: 70px;
+    
+}
+.lau-award_card p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--color-golden);
+    margin: 1rem 0;
+}
+.lau-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.lau-img img{
+    width: 410px;
+    height: 300px;
+}
+@media screen and (max-width:1250px) {
+    .lau-award_card img{
+        width: 50px;
+        display: block;
+    }
+    .lau-award_card p{
+        margin-right: 2rem;
+    }
+    .lau-img img{
+        width: 400px;
+    }
+    .lau{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lau-award_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .lau-award_card img{
+        width: 50px;
+        display: block;
+    }
+    .lau-award_card p{
+        
+        margin-right: 2rem;
+    }
+    .lau-img img{
+        width: 40vw;
+    }
+    
+}

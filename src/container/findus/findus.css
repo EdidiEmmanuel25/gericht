@@ -1,0 +1,55 @@
+.find{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.find-info{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.find-info p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04rem;
+}
+.find-info h1{
+    color: var(--color-golden);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    line-height: 47px;
+    letter-spacing: 0.04rem;
+}
+.find-content p{
+    margin-bottom: 1rem;
+}
+.find-info button{
+    padding: 1rem;
+    border: none;
+    border-radius: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    background: var(--color-crimson);
+}
+.find-image img{
+    width: 310px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media screen and (max-width:850px) {
+    .find{
+        flex-direction: column;
+    }
+    .find-info{
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+}

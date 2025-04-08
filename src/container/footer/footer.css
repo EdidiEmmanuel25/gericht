@@ -1,0 +1,16 @@
+.footer{
+    width: initial;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background: var(--color-black);
+    padding: 0;
+}
+.first{
+    color: var(--color-white);
+    margin: 1rem 0;
+}

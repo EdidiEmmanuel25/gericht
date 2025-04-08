@@ -1,0 +1,124 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+    padding: 1rem 2rem;
+}
+.navbar_logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+.navbar_logo img{
+    width: 150px;
+}
+.navbar_menu{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navbar_menu ul{
+    display: inline-block;
+}
+
+.navbar_menu li{
+    display: inline-block;
+    margin: 0 1rem;
+    color: white;
+    cursor: pointer;
+}
+.navbar_menu a:hover {
+    color: var(--color-grey);
+}
+
+.navbar_sign{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: left;
+}
+.navbar_sign a{
+    color: white;
+    margin:0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.navbar_sign a:hover{
+    border-bottom: 1px solid var(--color-golden);
+}
+.navbar_sign div{
+    width: 1px;
+    height: 30px;
+    background: var(--color-grey);
+}
+.navbar_pho{
+    display: none;
+}
+.navbar_pho-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-black);
+    transition: 0.5s ease;
+    flex-direction: column;
+    z-index: 5;
+}
+.navbar_pho-menu{
+    color: white;
+}
+.navbar_pho-overlay .overlay_close{
+    font-size: 27px;
+    color: var(--color-golden);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.navbar_pho-links li{
+    list-style: none;
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+.navbar_pho-links li:hover{
+    color: var(--color-white);
+}
+
+@media screen and (max-width:2000px) {
+   .navbar_logo img{
+       width: 21vw;
+   }
+    
+}
+
+@media screen and (max-width:1150px) {
+    .navbar_menu{
+        display: none;
+    }
+    .navbar_pho{
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+   .navbar{
+       padding: 1rem;
+   }
+   .navbar_sign{
+       display: none;
+   }
+    
+}

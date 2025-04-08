@@ -1,0 +1,90 @@
+.newsletter{
+    padding: 1rem;
+    border: 1px solid var(--color-golden);
+}
+.newsletter-heading{
+    text-align: center;
+}
+.newsletter-heading p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    color: white;
+}
+.newsletter-heading h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    line-height: 47px;
+    color: var(--color-golden);
+}
+.newsletter-input{
+    flex-direction: row;
+    margin-top: 3rem;
+}
+.newsletter-input input{
+    width: 620px;
+    border:  1px solid var(--color-golden);
+    border-radius: 5px;
+    margin-right: 2rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-black);
+}
+.newsletter-input ::placeholder{
+    color: white;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.newsletter-input button{
+    width: max-content;
+    padding:1rem 1.6rem;
+    background-color: var(--color-crimson);
+    border: none;
+    border-radius: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+@media screen and (max-width:1500px) {
+    .newsletter{
+        padding: 0;
+    }
+    .newsletter-input input{
+        font-size: 2rem;
+    }
+    .newsletter-input ::placeholder{
+        font-size: 22px;
+}
+    .newsletter-input{
+        width: 100%;
+    }
+}
+@media screen and (max-width:990px) {
+    .newsletter{
+        border: none;
+    }
+    .newsletter-input{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3rem;
+        width: 80%;
+    }
+    .newsletter-input input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .newsletter{
+        padding: 2rem 0;
+        border: none;
+    }
+}
+@media screen and (max-width:300px) {
+    .newsletter-heading h1{
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
