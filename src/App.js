@@ -7,11 +7,11 @@ const App = () => {
   return (
     <div className='mainapp'>
       <NavBar />
+      <Intro/>
       <Header />
       <AboutUs/>
       <SpecialMenu/>
       <Chef/>
-      <Intro/>
       <Laurels/>
       <Gallery/>
       <FindUs/>
